@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Date & Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f4f6f9;
+    }
+    h1 {
+      color: #333;
+    }
+    #time {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #007bff;
+    }
+  </style>
+  <script>
+    function updateTime() {
+      const now = new Date();
+      document.getElementById("time").innerHTML = now.toLocaleString();
+    }
+    setInterval(updateTime, 1000);
+  </script>
+</head>
+<body onload="updateTime()">
+
+  <h1>KMTC Zone 6 Zonal Sports Competitions - Bungoma Campus</h1>
+  <h2>Official Meals Attendance Verification Portal</h2>
+
+  <div id="time"></div>
+
+</body>
+</html>
